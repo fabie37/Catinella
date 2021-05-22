@@ -27,4 +27,5 @@ cd "$project_name"
 npm install
 npm run build
 echo "Alright! Go to $domain to test it out"
-serve -s build -p 80
+pm2 delete $project_name
+pm2 serve /var/www/Catinella/build 80 --name "$project_name" --spa
