@@ -19,7 +19,6 @@
 
 .Text {
     font-size: 5vw;
-    font-family: 'Montserrat Thin';
     font-weight: 100;
     letter-spacing: 0.3em;
     animation: fade_in 2s ease-in-out forwards;
