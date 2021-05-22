@@ -1,7 +1,12 @@
 import './App.css';
+import Title from './components/Title/Title';
 
-function App() {
-    return <div className='App'></div>;
-}
+const App = () => {
+    return (
+        <div className='App'>
+            <Title text='CATINELLA'></Title>
+        </div>
+    );
+};
 
 export default App;

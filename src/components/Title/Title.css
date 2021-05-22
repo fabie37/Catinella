@@ -1,0 +1,21 @@
+@keyframes fade_in {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.Title {
+    display: flex;
+    font-size: 5vw;
+    font-family: 'Montserrat Thin';
+    font-weight: 100;
+    letter-spacing: 0.25em;
+    animation-name: fade_in;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
