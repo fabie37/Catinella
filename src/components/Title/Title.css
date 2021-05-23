@@ -38,12 +38,12 @@
 }
 
 @media (max-width: 800px) {
+    .Line {
+        margin-top: 3vh;
+    }
+
     .Text {
         font-size: 5vh;
-        font-weight: 100;
-        letter-spacing: 0.3em;
-        animation: fade_in 2s ease-in-out forwards;
-        align-self: center;
-        opacity: 0;
+        padding-inline: 2em;
     }
 }
