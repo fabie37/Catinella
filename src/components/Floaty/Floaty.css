@@ -1,0 +1,28 @@
+@keyframes fade_in {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.Floaty-Row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: auto;
+    margin-top: 2em;
+    width: 80%;
+}
+
+.Floaty-Text {
+    margin: 1em;
+    font-size: 2vw;
+    font-weight: 100;
+    opacity: 0;
+    letter-spacing: 0.2em;
+}
