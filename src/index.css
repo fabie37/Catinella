@@ -1,8 +1,13 @@
+@font-face {
+    font-family: 'Local Times';
+    src: url('./fonts/Times-New-Roman/times_new_roman.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
 html {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Local Times', 'Times New Roman', 'Times', serif;
 }
