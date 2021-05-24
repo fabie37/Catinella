@@ -1,8 +1,9 @@
 .App {
-  width: 200%;
-  height: 100vh;
+  width: auto;
+  height: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: row;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
 }

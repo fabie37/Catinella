@@ -12,11 +12,8 @@ const App = () => {
   // About Page
   const about = "ABOUT";
 
-  // Page Settings
-  const pages = 2;
-
   return (
-    <div style={{ width: "".concat({ pages }, "00%") }} className="App">
+    <div className="App">
       <Page>
         <Title key="Title" text={title}></Title>
         <Floaty key="Floaty-Bar" floaty_list={floaty_list}></Floaty>
