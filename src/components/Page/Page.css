@@ -1,0 +1,6 @@
+.Page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  scroll-snap-align: center;
+}
