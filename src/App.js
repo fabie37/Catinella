@@ -12,6 +12,9 @@ const App = () => {
   // About Page
   const about = "ABOUT";
 
+  // Contact Page
+  const contact = "CONTACT";
+
   return (
     <div className="App">
       <Page>
@@ -20,6 +23,9 @@ const App = () => {
       </Page>
       <Page>
         <Title key="Title" text={about}></Title>
+      </Page>
+      <Page>
+        <Title key="Title" text={contact}></Title>
       </Page>
     </div>
   );
