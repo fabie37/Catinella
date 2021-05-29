@@ -3,7 +3,7 @@
 # Variables
 
 domain="www.catinella.co.uk"
-port=80
+port=5000
 project_name="Catinella"
 public_dir="/var/www"
 git_url="https://github.com/fabie37/Catinella.git"
@@ -28,4 +28,4 @@ npm install
 npm run build
 echo "Alright! Go to $domain to test it out"
 pm2 delete $project_name
-pm2 serve /var/www/Catinella/build 80 --name "$project_name" --spa
+pm2 serve /var/www/Catinella/build $port --name "$project_name" --spa
