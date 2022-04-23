@@ -1,11 +1,11 @@
 import React from 'react';
 import './Title.css';
 
-const Title = ({ text }) => {
+const Title = ({ text, align }) => {
     return (
-        <div className='Title'>
-            <div className='Text'>{text}</div>
-            <hr className='Line' />
+        <div className={'Title ' + align}>
+            <div className={'Text ' + align}>{text}</div>
+            <hr className={'Line ' + align} />
         </div>
     );
 };

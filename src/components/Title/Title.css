@@ -15,6 +15,28 @@
   align-content: center;
   justify-content: center;
   justify-items: center;
+  align-self: center;
+  width: 80%;
+}
+
+.Center {
+  align-content: center !important;
+}
+
+.Left {
+  align-content: start !important;
+}
+
+.Right {
+  align-content: end !important;
+}
+
+.Text.Right {
+  align-self: end;
+}
+
+.Text.Left {
+  align-self: start;
 }
 
 .Text {
@@ -24,6 +46,16 @@
   animation: fade_in 2s ease-in-out forwards;
   align-self: center;
   opacity: 0;
+}
+
+.Line.Right {
+  margin-right: 0;
+  width:60%;
+}
+
+.Line.Left {
+  margin-left: 0;
+  width:60%;
 }
 
 .Line {
