@@ -4,7 +4,7 @@ import Title from "./components/Title/Title";
 import Body from "./components/Body/Body";
 import Page from "./components/Page/Page";
 import AboutBody from "./data/AboutBody";
-import {phone, email, linkedin} from "./data/ContactDetails";
+import {contacts} from "./data/ContactDetails";
 import React from "react";
 
 const App = () => {
@@ -31,7 +31,7 @@ const App = () => {
       </Page>
       <Page>
         <Title key="Title" text={contact} align='Left'></Title>
-        <Body key="Body" align='Left' text={phone + '\n' + email + '\n' + linkedin}></Body>
+        <Body key="Body" align='Left' text={contacts}></Body>
       </Page>
     </div>
   );
