@@ -1,15 +1,15 @@
 @keyframes fade_in {
     from {
-      transform: translateY(25px);
-      opacity: 0;
+        transform: translateY(25px);
+        opacity: 0;
     }
     to {
-      transform: translate(0px);
-      opacity: 1;
+        transform: translate(0px);
+        opacity: 1;
     }
-  }
-  
-  .Body {
+}
+
+.Body {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,39 +18,39 @@
     flex-basis: auto;
     margin-top: 2em;
     width: 80%;
-  }
+}
 
-  .Left {
+.Left {
     text-align: left;
     justify-content: start;
-  }
+}
 
-  .Right {
+.Right {
     text-align: right;
     justify-content: end;
-  }
+}
 
-  .Body-Text.Left {
-      text-align: left;
-      justify-content: start;
-  }
+.Body-Text.Left {
+    text-align: left;
+    justify-content: start;
+}
 
-  .Body-Text.Right {
+.Body-Text.Right {
     justify-content: end;
     text-align: right;
- }
-  
-  .Body-Text {
+}
+
+.Body-Text {
     font-size: 2vw;
     font-weight: 100;
-    animation: fade_in 2s ease-in-out forwards;
+    animation: fade_in 2s ease-in-out 1.2s forwards;
     align-self: center;
     text-align: right;
     opacity: 0;
     white-space: pre-line;
-  }
-  
-  .Line {
+}
+
+.Line {
     justify-self: center;
     align-self: center;
     width: 20%;
@@ -59,16 +59,15 @@
     background-color: black;
     animation: fade_in 1s ease-in-out 1s forwards;
     opacity: 0;
-  }
-  
-  @media (max-width: 800px) {
+}
+
+@media (max-width: 800px) {
     .Line {
-      margin-top: 3vh;
-      width: 40%;
+        margin-top: 3vh;
+        width: 40%;
     }
-  
+
     .Body-Text {
-      font-size: 2vh;
+        font-size: 2vh;
     }
-  }
-  
+}
