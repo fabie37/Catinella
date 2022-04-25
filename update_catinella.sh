@@ -14,10 +14,10 @@ echo "Updating the $project_name website. Hold on..."
 
 if [ -d "$public_dir/$project_name" ]
 then
-        echo "Deleting old project folder..."
-        rm -rf "$public_dir/$project_name"
+    echo "Deleting old project folder..."
+    rm -rf "$public_dir/$project_name"
 else
-        echo "Public dir:$public_dir is clean."
+    echo "Public dir:$public_dir is clean."
 fi
 
 echo "Downloading latest project."
@@ -29,3 +29,4 @@ npm run build
 echo "Alright! Go to $domain to test it out"
 pm2 delete $project_name
 pm2 serve /var/www/Catinella/build $port --name "$project_name" --spa
+npm run sitemap
