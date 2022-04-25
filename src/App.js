@@ -4,7 +4,7 @@ import { meta_title, meta_description, meta_keywords } from './data/metadata';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import React from 'react';
 
-const App = () => {
+const App = ({ page }) => {
     return (
         <div className="App">
             {/* SEO Stuff */}
@@ -17,7 +17,7 @@ const App = () => {
             </HelmetProvider>
 
             {/* The Application */}
-            <Home />
+            <Home page={page} />
         </div>
     );
 };

@@ -10,6 +10,8 @@ render(
     <BrowserRouter>
         <Routes>
             <Route exact path="/" element={<App />} />
+            <Route exact path="/about" element={<App page="about" />} />
+            <Route exact path="/contact" element={<App page="contact" />} />
             <Route path="*" element={<NoMatch />} />
         </Routes>
     </BrowserRouter>,

@@ -8,7 +8,7 @@ const body = 'This page does not exist.';
 
 const NoMatch = () => (
     <div>
-        <Page>
+        <Page name="404">
             <Title key="Title" text={title} align="Right"></Title>
             <Body key="Body" align="Right" text={body}></Body>
             <Body></Body>
