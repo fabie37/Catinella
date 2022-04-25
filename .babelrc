@@ -1,0 +1,11 @@
+{
+    "presets": ["react", "es2015"],
+    "plugins": [
+        [
+          "babel-plugin-transform-import-ignore",
+          {
+            "patterns": [".css"]
+          }
+        ]
+      ]
+}

@@ -1,19 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
-import App from './App';
-import NoMatch from './pages/NoMatch';
+import Routing from './routing';
 
 const rootElement = document.getElementById('root');
 render(
     <BrowserRouter>
-        <Routes>
-            <Route exact path="/" element={<App />} />
-            <Route exact path="/about" element={<App page="about" />} />
-            <Route exact path="/contact" element={<App page="contact" />} />
-            <Route path="*" element={<NoMatch />} />
-        </Routes>
+        <Routing></Routing>
     </BrowserRouter>,
     rootElement
 );
+
+export default Routing;
