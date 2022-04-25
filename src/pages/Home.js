@@ -15,21 +15,24 @@ const about = "ABOUT";
 // Contact Page
 const contact = "CONTACT";
 
-const Home = () => 
+const Home = ({ page }) => {
+
+    return(
         <div>
-            <Page>
+            <Page currentPage={page}>
                 <Title key="Title" text={title} align='Center'></Title>
                 <Floaty key="Floaty-Bar" floaty_list={floaty_list}></Floaty>
             </Page>
-            <Page>
+            <Page name="about" currentPage={page}>
                 <Title key="Title" text={about} align='Right'></Title>
                 <Body key="Body" align='Right' text={AboutBody}></Body>
             </Page>
-            <Page>
+            <Page name="contact" currentPage={page}>
                 <Title key="Title" text={contact} align='Left'></Title>
                 <Body key="Body" align='Left' text={contacts}></Body>
             </Page>
         </div>
-
+    );
+    }
 
 export default Home;
