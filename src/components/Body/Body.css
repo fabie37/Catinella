@@ -9,6 +9,24 @@
     }
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    display: block;
+    width: 100%;
+}
+
+.Body-Elements:hover .Body-Text:not(:hover){
+    color:rgb(230, 230, 230);
+    filter:blur(1px);
+    opacity: 0%;
+}
+
+
 .Body {
     display: flex;
     flex-direction: row;
@@ -48,6 +66,10 @@
     text-align: right;
     opacity: 0;
     white-space: pre-line;
+}
+
+.Body-Elements {
+    display: block;
 }
 
 .Line {
